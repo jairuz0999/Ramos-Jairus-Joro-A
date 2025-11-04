@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - My Portfolio</title>
+  <link rel="stylesheet" href="everything.css" />
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <h1>Ramos Jairus Joro A</h1>
+      <p class="subtitle">Web Developer/Musician/Student</p>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <h2>Contact Me</h2>
+      <p>I'd love to hear from you! Fill out the form below or connect with me on social media.</p>
+
+      <div class="contact-container">
+       
+        <form id="contactForm" class="contact-form">
+          <label for="name">Enter Your Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+          <label for="email">Enter your email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+          <label for="message">Your Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+
+          <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+
+       
+        <div class="contact-info">
+          <h3>Let's Connect</h3>
+          <p>📧 <a href="20240052@cstc.edu.ph">20240052@cstc.edu.ph</a></p>
+          <p>📞 09686689171</p>
+          <div class="social-links">
+            <a href="https://github.com/yourusername" target="_blank">🌐 GitHub</a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank">💼 LinkedIn</a>
+            <a href="https://twitter.com/yourusername" target="_blank">🐦 Twitter</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Ramos Jairus Joro A | <a href="20240052@cstc.edu.ph">20240052@cstc.edu.ph</a></p>
+  </footer>
+
+  <script>
+ 
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Thank you! Your message has been sent successfully.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>
